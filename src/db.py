@@ -15,7 +15,7 @@ VALID_SENSOR_TYPES = {
     "temperatura": (-10, 100),
     "presion": (0, 500),
     "vibracion": (0, 5),
-    "humedad": (0, 100)
+    "humedad": (0, 99)
 }
 
 def validate_sensor(sensor, existing_sensor_ids):

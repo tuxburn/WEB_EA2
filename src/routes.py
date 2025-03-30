@@ -65,7 +65,7 @@ def update_sensor_in_module(modulo_id, sensor_id):
     data = request.json
     result = update_sensor(modulo_id, sensor_id, data)
     if "error" in result:
-        return jsonify(result), 400
+        return jsonify(result), 500
     return jsonify(result), 200
 
 @routes.route('/modulos/<modulo_id>/sensores/<sensor_id>', methods=['DELETE'])
